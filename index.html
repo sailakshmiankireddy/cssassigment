@@ -146,6 +146,34 @@ p {
 }
 
 </style>
+<style>
+    .body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.scale-button {
+  width: 150px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Optional styling for rounded corners */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scale-button:hover {
+  transform: scale(1.2);
+  background-color: #0056b3; /* Optional color change for hover */
+}
+</style>
 
 
 </head>
@@ -182,8 +210,8 @@ p {
       </div>
 
       <title>Hover Button</title>
-      <button class="hover-button">Hover Over Me</button>
-
+      <button class="hover-button">Hover Over Me</button>  
+      <button class="scale-button">Hover Me</button>
       
 
 
