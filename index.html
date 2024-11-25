@@ -119,25 +119,36 @@ p {
   }
 }
 </style>
+<style>
+    .body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
 
+.hover-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease;
+}
 
+.hover-button:hover {
+  background-color: darkblue;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+</style>
 
 
 </head>
-
 <body>
   <ul>
     <li><a href="#link1">Link 1</a></li>
@@ -169,5 +180,13 @@ p {
         <img src="https://wallpapercave.com/wp/wp8342404.jpg" alt="Image 3" height="100px" width="100px">
         <img src="https://wallpapercave.com/wp/wp6745778.jpg" alt="Image 4" height="100px" width="100px">
       </div>
+
+      <title>Hover Button</title>
+      <button class="hover-button">Hover Over Me</button>
+
+      
+
+
+  
 </body>
 </html>
