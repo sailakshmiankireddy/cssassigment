@@ -91,6 +91,34 @@ p {
   color: yellow;
 }
 </style>
+<style>
+    .body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+
+.gallery img {
+  width: 50%;
+  height: 50%;
+  border-radius: 2px; 
+}
+
+
+@media (max-width: 100px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 
 
@@ -134,5 +162,12 @@ p {
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="gallery">
+        <img src="https://wallpapercave.com/wp/wp2581606.jpg" alt="Image 1" height="100px" width="100px">
+        <img src="https://w0.peakpx.com/wallpaper/651/771/HD-wallpaper-surya-actor-suriya.jpg" alt="Image 2" height="100px" width="100px">
+        <img src="https://wallpapercave.com/wp/wp8342404.jpg" alt="Image 3" height="100px" width="100px">
+        <img src="https://wallpapercave.com/wp/wp6745778.jpg" alt="Image 4" height="100px" width="100px">
+      </div>
 </body>
 </html>
